@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import com.shoptracker.models.Error;
 
 import org.springframework.http.HttpStatus;
-
+/* This class takes care of producing, when possible, a meaningful output in 
+ * case of error.  */
 @ControllerAdvice
 public class RestServicesException {
 	    @ExceptionHandler(MissingServletRequestParameterException.class)
